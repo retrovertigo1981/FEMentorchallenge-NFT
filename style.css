@@ -1,0 +1,164 @@
+@import url(./normalize.css);
+
+:root {
+    
+
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+     --main-BG: hsl(217, 54%, 11%);
+    --card-BG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    background-color: var(--main-BG);
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.nft-card {
+
+    
+    display: grid;
+    place-items: center;
+    width: 340px;
+    height: 600px;
+    background-color: var(--card-BG);
+    border-radius: 25px;
+    
+   
+}
+
+.nft-card--container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 320px;
+    justify-content: center;
+    margin-top: -10px;
+}
+
+.nft-card--container img {
+    
+    width: 290px;
+    height: 290px;
+    border-radius: 10px;
+    margin: 10px auto;
+    
+}
+
+.title {
+    color: var(--white);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-left: 16px;
+}
+
+.subtitle {
+    color: var(--Soft-blue);
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    font-weight: 300;
+    margin-left: 16px;
+    margin-bottom: 10px;
+}
+
+.price-info {
+    display: flex;
+    margin-top: 15px;
+    
+    
+    
+}
+
+.etherium-icon {
+    display: inline-block;
+    width: 13px;
+    height: 20px;
+    background: url('./assets/logos/icon-ethereum.svg') center/cover no-repeat;
+    margin-right: 5px;
+    margin-left: 16px;
+    
+
+}
+
+.price-info .etherium-price {
+    color: var(--Cyan);
+    font-size: 2.0rem;
+    font-weight: 600px;
+    margin-left: 5px;
+    
+    
+}
+
+.clock-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;       
+    background: url('./assets/logos/icon-clock.svg') center/cover no-repeat;   
+    margin-left: 60px;
+
+}
+
+.price-info .time-left {
+    color: var(--Soft-blue);
+    font-size: 1.8rem;
+    font-weight: 600px;
+    margin-left: 10px;
+    
+}
+
+.line {
+    border-bottom: 1px solid var(--line);
+    margin-left: 10px;
+    margin-top: 20px;
+    width: 290px;
+}
+
+footer {
+    display: flex;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.avatar {
+    display: inline-block;
+    background: url('./assets/imgs/image-avatar.png') center/cover no-repeat;
+    width: 35px;
+    height: 35px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+footer .author{
+    font-size: 1.6rem;
+    color: var(--Soft-blue);
+    padding-top: 10px;
+    margin-left: 10px;
+
+}
+
+footer .author a {
+    text-decoration: none;
+    color: var(--white);
+}
+
