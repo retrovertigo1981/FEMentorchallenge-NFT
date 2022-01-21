@@ -26,6 +26,7 @@ html {
 body {
     background-color: var(--main-BG);
     display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100vh;
     justify-content: center;
@@ -89,12 +90,7 @@ body {
     
 }
 
-.nft-card--container img:hover {
-    background-color: rgba(0, 255, 247, 0.5);
-    transition: all 0.3s ease-out;
-    opacity: 1;
-    
-}
+
 
 .title {
     color: var(--white);
@@ -207,3 +203,23 @@ body {
 
 }
 
+.credits {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.credits p {
+    color: var(--Soft-blue);
+    font-size: 1.6rem;
+}
+
+.credits a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.credits a:hover {
+    color: var(--Cyan);
+}
