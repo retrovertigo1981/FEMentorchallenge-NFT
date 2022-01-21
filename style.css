@@ -38,7 +38,7 @@ body {
     
     display: grid;
     place-items: center;
-    width: 340px;
+    max-width: 320px;
     height: 600px;
     background-color: var(--card-BG);
     border-radius: 25px;
@@ -54,12 +54,45 @@ body {
     margin-top: -10px;
 }
 
+.nft-card--container .view {
+    display: flex;
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    border-radius: 10px;
+    margin: 10px 20px;
+    background-color: rgba(0, 255, 247, 0.5);
+    opacity: 0;
+    transition: all 0.3s ease-out; 
+    
+}
+
+.nft-card--container .view:hover {
+    opacity: 1;
+    
+}
+
+.nft-card--container .view .view-eye {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background: url('./assets/logos/icon-view.svg') center/cover no-repeat;
+    margin: auto;
+}
+
 .nft-card--container img {
     
-    width: 290px;
-    height: 290px;
+    width: 280px;
+    height: 280px;
     border-radius: 10px;
     margin: 10px auto;
+    
+}
+
+.nft-card--container img:hover {
+    background-color: rgba(0, 255, 247, 0.5);
+    transition: all 0.3s ease-out;
+    opacity: 1;
     
 }
 
@@ -67,17 +100,22 @@ body {
     color: var(--white);
     padding-top: 10px;
     padding-bottom: 10px;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     font-weight: 600;
-    margin-left: 16px;
+    margin-left: 20px;
+}
+
+.title:hover {
+    color: var(--Cyan);
+    cursor: pointer;
 }
 
 .subtitle {
     color: var(--Soft-blue);
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     line-height: 2.4rem;
     font-weight: 300;
-    margin-left: 16px;
+    margin-left: 20px;
     margin-bottom: 10px;
 }
 
@@ -95,7 +133,7 @@ body {
     height: 20px;
     background: url('./assets/logos/icon-ethereum.svg') center/cover no-repeat;
     margin-right: 5px;
-    margin-left: 16px;
+    margin-left: 20px;
     
 
 }
@@ -133,7 +171,7 @@ body {
     width: 290px;
 }
 
-footer {
+.footer {
     display: flex;
     margin-left: 15px;
     margin-top: 15px;
@@ -149,7 +187,7 @@ footer {
     margin-right: 10px;
 }
 
-footer .author{
+.footer .author{
     font-size: 1.6rem;
     color: var(--Soft-blue);
     padding-top: 8px;
@@ -157,8 +195,15 @@ footer .author{
 
 }
 
-footer .author a {
+.footer .author a {
     text-decoration: none;
     color: var(--white);
+}
+
+
+.footer .author a:hover {
+    
+    color: var(--Cyan);
+
 }
 
