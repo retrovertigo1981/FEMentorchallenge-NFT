@@ -208,11 +208,13 @@ body {
     align-content: center;
     justify-content: center;
     margin-top: 40px;
+    
 }
 
 .credits p {
     color: var(--Soft-blue);
     font-size: 1.6rem;
+    text-align: center;
 }
 
 .credits a {
